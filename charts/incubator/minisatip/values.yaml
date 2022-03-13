@@ -1,0 +1,62 @@
+#
+# IMPORTANT NOTE
+#
+# This chart inherits from our common library chart. You can check the default values/options here:
+# https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common/values.yaml
+#
+
+image:
+  # -- image repository
+  repository: ghcr.io/linuxserver/minisatip
+  # -- image tag
+  tag: version-30c4f08a
+  # -- image pull policy
+  pullPolicy: IfNotPresent
+
+# -- environment variables. See more parameters in the [linuxserver documentation](https://github.com/linuxserver/docker-minisatip/pkgs/container/minisatip#parameters).
+# @default -- See below
+env:
+  # -- Set the container timezone
+  TZ: UTC
+
+# -- Configures service settings for the chart.
+# @default -- See values.yaml
+service:
+  main:
+    ports:
+      http:
+        port: 8875
+      rtsp:
+        port: 554
+        enabled: true
+        protocol: UDP
+      app:
+        port: 1900
+        enabled: true
+        protocol: UDP
+
+ingress:
+  # -- Enable and configure ingress settings for the chart under this key.
+  # @default -- See values.yaml
+  main:
+    enabled: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+securityContext:
+  # -- (bool) Privileged securityContext may be required if dvb devics are accessed directly through the host machine
+  privileged: false
+
+# -- Configure persistence settings for the chart under this key.
+# @default -- See values.yaml
+persistence:
+  config:
+    enabled: false
+    mountPath: /config
+  # -- Configure a hostPathMount to mount dvb device in the container.
+  # @default -- See values.yaml
+  dvb:
+    enabled: false
+    type: hostPath
+    hostPath: /dev/dvb
+    mountPath: /dev/dvb

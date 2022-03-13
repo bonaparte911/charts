@@ -1,0 +1,24 @@
+apiVersion: v2
+appVersion: "version-30c4f08a"
+description: "minisatip - A multi-threaded satip server version 1.2"
+name: minisatip
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - satip
+  - tv
+  - dvb
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/minisatip
+icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png
+sources:
+- https://github.com/catalinii/minisatip
+maintainers:
+- name: bonaparte911
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
