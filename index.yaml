@@ -29,4 +29,34 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/minisatip-1.0.1/minisatip-1.0.1.tgz
     version: 1.0.1
-generated: "2022-03-15T21:21:33.54587011Z"
+  oscam:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11704-ls37
+    created: "2022-03-27T21:05:14.327768153Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: oscam - Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards.
+    digest: e86b0bb125469050959057de888d19a308dc9cdb6647e9a4e1ab2a1a1c3a755e
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/oscam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+    keywords:
+    - tv
+    - dvb
+    - cam
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: oscam
+    sources:
+    - http://www.streamboard.tv/oscam/
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.1/oscam-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-03-27T21:05:14.327781454Z"
