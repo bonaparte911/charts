@@ -57,22 +57,22 @@ persistence:
         mountPath: /config/oscam.conf
         readOnly: true
         enabled: true
-        config: '{{ .Values.oscamConfig.oscamConf }}'
+        config: '{{ .Values.global.oscamConfig.oscamConf }}'
       - path: oscam.server
         mountPath: /config/oscam.server
         readOnly: true
         enabled: false
-        config: '{{ .Values.oscamConfig.oscamServer }}'
+        config: '{{ .Values.global.oscamConfig.oscamServer }}'
       - path: oscam.user
         mountPath: /config/oscam.user
         readOnly: true
         enabled: false
-        config: '{{ .Values.oscamConfig.oscamUser }}'
+        config: '{{ .Values.global.oscamConfig.oscamUser }}'
       - path: SoftCam.Key
         mountPath: /config/SoftCam.Key
         readOnly: true
         enabled: false
-        config: '{{ .Values.oscamConfig.softCamKey }}'
+        config: '{{ .Values.global.oscamConfig.softCamKey }}'
   # -- Configure hostPathMount(s) to mount (multiple) smart card reader devices in the container.
   # -- See more variants [@linuxserver.io](https://github.com/linuxserver/docker-oscam#passing-through-smart-card-readers).
   # @default -- See values.yaml
@@ -82,18 +82,19 @@ persistence:
     hostPath: /dev/ttyUSB0
     mountPath: /dev/ttyUSB0
 
-oscamConfig:
-  oscamConf: |
-      [global]
-      logfile       = stdout
+global:
+  oscamConfig:
+    oscamConf: |
+        [global]
+        logfile       = stdout
 
-      [cache]
+        [cache]
 
-      [webif]
-      httpport      = 8888
-      httpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255
-  oscamServer: |
+        [webif]
+        httpport      = 8888
+        httpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255
+    oscamServer: |
 
-  oscamUser: |
+    oscamUser: |
 
-  softCamKey: |
+    softCamKey: |
