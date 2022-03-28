@@ -1,6 +1,6 @@
 # oscam
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
 
 oscam - Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards.
 
@@ -77,14 +77,14 @@ N/A
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. See more parameters in the [linuxserver documentation](https://github.com/linuxserver/docker-oscam/pkgs/container/oscam#parameters). |
 | env.TZ | string | `"UTC"` | Set the container timezone |
+| global.oscamConfig.oscamConf | string | `"[global]\nlogfile       = stdout\n\n[cache]\n\n[webif]\nhttpport      = 8888\nhttpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255\n"` |  |
+| global.oscamConfig.oscamServer | string | `""` |  |
+| global.oscamConfig.oscamUser | string | `""` |  |
+| global.oscamConfig.softCamKey | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/oscam"` | image repository |
 | image.tag | string | `"11704-ls37"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
-| oscamConfig.oscamConf | string | `"[global]\nlogfile       = stdout\n\n[cache]\n\n[webif]\nhttpport      = 8888\nhttpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255\n"` |  |
-| oscamConfig.oscamServer | string | `""` |  |
-| oscamConfig.oscamUser | string | `""` |  |
-| oscamConfig.softCamKey | string | `""` |  |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.reader | object | See values.yaml | Configure hostPathMount(s) to mount (multiple) smart card reader devices in the container. -- See more variants [@linuxserver.io](https://github.com/linuxserver/docker-oscam#passing-through-smart-card-readers). |
 | securityContext | object | See values.yaml | Configure persistence settings for the chart under this key. |
@@ -93,7 +93,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.2
 
 #### Added
 
