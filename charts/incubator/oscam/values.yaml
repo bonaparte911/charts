@@ -51,7 +51,7 @@ persistence:
     type: custom
     volumeSpec:
       configMap:
-        name: oscam-oscam-config
+        name: oscam-config
     subPath:
       - path: oscam.conf
         mountPath: /config/oscam.conf
