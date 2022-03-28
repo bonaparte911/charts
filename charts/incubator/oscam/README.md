@@ -1,6 +1,6 @@
 # oscam
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
 
 oscam - Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards.
 
@@ -93,7 +93,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 
