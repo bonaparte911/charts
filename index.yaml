@@ -36,6 +36,35 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 11704-ls37
+    created: "2022-03-28T21:34:17.718507394Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: oscam - Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards.
+    digest: 152c108c5c9413479248848ac2e8e384d97ed1410ec461429349e97f6d21fcc7
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/oscam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+    keywords:
+    - tv
+    - dvb
+    - cam
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: oscam
+    sources:
+    - http://www.streamboard.tv/oscam/
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.3/oscam-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11704-ls37
     created: "2022-03-27T22:08:04.57328463Z"
     dependencies:
     - name: common
@@ -88,4 +117,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.1/oscam-1.0.1.tgz
     version: 1.0.1
-generated: "2022-03-27T22:08:04.573320131Z"
+generated: "2022-03-28T21:34:17.718526395Z"
