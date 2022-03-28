@@ -50,8 +50,8 @@ persistence:
     enabled: true
     type: custom
     volumeSpec:
-      secret:
-        secretName: oscam-oscam-secret
+      configMap:
+        name: oscam-oscam-config
     subPath:
       - path: oscam.conf
         mountPath: /config/oscam.conf
