@@ -146,4 +146,32 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.1/oscam-1.0.1.tgz
     version: 1.0.1
-generated: "2022-03-28T21:49:02.851103131Z"
+  osemu:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v732
+    created: "2022-04-03T13:12:03.086060496Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: OSEmu - Standalone Emu reader for OSCam server
+    digest: b0e31b8b2258c167a442782e4e4f2edd856305bb0e2a31bad23dd7e49d7e5522
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/osemu
+    keywords:
+    - tv
+    - dvb
+    - emu
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: osemu
+    sources:
+    - https://github.com/oscam-emu/OSEmu
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-04-03T13:12:03.086084396Z"
