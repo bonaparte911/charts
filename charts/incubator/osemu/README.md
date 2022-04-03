@@ -1,6 +1,6 @@
 # osemu
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
 
 OSEmu - Standalone Emu reader for OSCam server
 
@@ -76,6 +76,8 @@ N/A
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | env | object | See below | environment variables. See more parameters in the [osemu documentation](https://github.com/oscam-emu/OSEmu/blob/master/README). |
+| env.OSEMU_PASSWORD | string | `"password"` | Set the password [REQUIRED] |
+| env.OSEMU_USER | string | `"user"` | Set the user [REQUIRED] |
 | env.TZ | string | `"UTC"` | Set the container timezone |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/bonaparte911/osemu"` | image repository |
@@ -87,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 
 #### Added
 

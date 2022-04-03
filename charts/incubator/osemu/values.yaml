@@ -18,6 +18,10 @@ image:
 env:
   # -- Set the container timezone
   TZ: UTC
+  # -- Set the user [REQUIRED]
+  OSEMU_USER: user
+  # -- Set the password [REQUIRED]
+  OSEMU_PASSWORD: password
 
 # -- Configures service settings for the chart.
 # @default -- See values.yaml
