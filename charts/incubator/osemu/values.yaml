@@ -23,11 +23,13 @@ env:
   # -- Set the password [REQUIRED]
   OSEMU_PASSWORD: password
 
-# -- Configures service settings for the chart.
-# @default -- See values.yaml
+# -- nothing listens on http port, just defined due to common subchart
+# @default -- See below
 service:
   main:
     ports:
+      http:
+        port: 80
       cs357x:
         port: 11000
 
