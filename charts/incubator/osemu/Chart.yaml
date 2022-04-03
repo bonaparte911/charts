@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: "v732"
+description: "OSEmu - Standalone Emu reader for OSCam server"
+name: osemu
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - tv
+  - dvb
+  - emu
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/osemu
+sources:
+- https://github.com/oscam-emu/OSEmu
+maintainers:
+- name: bonaparte911
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
