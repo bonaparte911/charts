@@ -68,11 +68,7 @@ persistence:
         readOnly: true
         enabled: false
         config: '{{ .Values.global.oscamConfig.oscamUser }}'
-      - path: SoftCam.Key
-        mountPath: /config/SoftCam.Key
-        readOnly: true
-        enabled: false
-        config: '{{ .Values.global.oscamConfig.softCamKey }}'
+
   # -- Configure hostPathMount(s) to mount (multiple) smart card reader devices in the container.
   # -- See more variants [@linuxserver.io](https://github.com/linuxserver/docker-oscam#passing-through-smart-card-readers).
   # @default -- See values.yaml
@@ -96,5 +92,3 @@ global:
     oscamServer: |
 
     oscamUser: |
-
-    softCamKey: |

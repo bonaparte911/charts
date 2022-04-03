@@ -1,6 +1,6 @@
 # oscam
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
+![Version: 1.0.5](https://img.shields.io/badge/Version-1.0.5-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
 
 oscam - Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards.
 
@@ -80,7 +80,6 @@ N/A
 | global.oscamConfig.oscamConf | string | `"[global]\nlogfile       = stdout\n\n[cache]\n\n[webif]\nhttpport      = 8888\nhttpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255\n"` |  |
 | global.oscamConfig.oscamServer | string | `""` |  |
 | global.oscamConfig.oscamUser | string | `""` |  |
-| global.oscamConfig.softCamKey | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/oscam"` | image repository |
 | image.tag | string | `"11704-ls37"` | image tag |
@@ -93,7 +92,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.5
 
 #### Added
 
