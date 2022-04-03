@@ -182,6 +182,33 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v732
+    created: "2022-04-03T17:57:58.494784843Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: OSEmu - Standalone Emu reader for OSCam server
+    digest: ff9d65e1ff8ab04945464f525b8f7338340ca4289c52c15b2e8a76a75cfd984c
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/osemu
+    keywords:
+    - tv
+    - dvb
+    - emu
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: osemu
+    sources:
+    - https://github.com/oscam-emu/OSEmu
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.1/osemu-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v732
     created: "2022-04-03T13:12:03.086060496Z"
     dependencies:
     - name: common
@@ -203,4 +230,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-03T13:39:27.879760604Z"
+generated: "2022-04-03T17:57:58.494801443Z"
