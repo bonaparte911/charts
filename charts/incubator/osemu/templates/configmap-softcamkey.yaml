@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: osemu-softcamkey
+  labels:
+    {{- include "common.labels" . | nindent 4 }}
+data:
+  softCamKey: |
+      {{ $.Values.softCamKey | quote  }}
