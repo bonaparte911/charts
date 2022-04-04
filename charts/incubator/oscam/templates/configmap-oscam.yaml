@@ -9,6 +9,6 @@ data:
 {{- range $subpath := .Values.persistence.config.subPath }}
   {{ if $subpath.enabled }}
     {{ $subpath.path }}: |
-      {{ tpl $subpath.config $ | quote  }}
+      {{ tpl $subpath.config $ | nindent 12  }}
   {{- end}}
 {{- end }}

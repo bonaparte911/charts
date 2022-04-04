@@ -79,6 +79,8 @@ persistence:
     mountPath: /dev/ttyUSB0
 
 global:
+  # -- OSCam configuration files
+  # @default -- See values.yaml
   oscamConfig:
     oscamConf: |
         [global]
@@ -89,6 +91,7 @@ global:
         [webif]
         httpport      = 8888
         httpallowed   = 127.0.0.1,192.168.0.0-192.168.255.255,10.0.0.0-10.255.255.255,255.255.255.255
+
     oscamServer: |
 
     oscamUser: |
