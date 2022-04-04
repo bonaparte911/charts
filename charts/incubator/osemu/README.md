@@ -1,6 +1,6 @@
 # osemu
 
-![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
+![Version: 1.0.4](https://img.shields.io/badge/Version-1.0.4-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
 
 OSEmu - Standalone Emu reader for OSCam server
 
@@ -89,7 +89,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.3
+### Version 1.0.4
 
 #### Added
 
