@@ -36,6 +36,35 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 11704-ls37
+    created: "2022-04-04T18:12:37.518825158Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: oscam - Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards.
+    digest: 7fc7758ecbe331e64dd7b2f0b875c00b67b6434851976b7e0b13bb371085a7c8
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/oscam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+    keywords:
+    - tv
+    - dvb
+    - cam
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: oscam
+    sources:
+    - http://www.streamboard.tv/oscam/
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.6/oscam-1.0.6.tgz
+    version: 1.0.6
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11704-ls37
     created: "2022-04-03T13:39:27.879736704Z"
     dependencies:
     - name: common
@@ -182,6 +211,33 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v732
+    created: "2022-04-04T18:12:37.644980448Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: OSEmu - Standalone Emu reader for OSCam server
+    digest: ca76d3841371d12cb14b09d6d033196e53a636e404adef5758ec046126ccb930
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/osemu
+    keywords:
+    - tv
+    - dvb
+    - emu
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: osemu
+    sources:
+    - https://github.com/oscam-emu/OSEmu
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.3/osemu-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v732
     created: "2022-04-03T18:27:43.218539706Z"
     dependencies:
     - name: common
@@ -257,4 +313,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-03T18:27:43.218563008Z"
+generated: "2022-04-04T18:12:37.64501795Z"
