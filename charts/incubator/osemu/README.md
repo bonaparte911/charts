@@ -1,6 +1,6 @@
 # osemu
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: v732](https://img.shields.io/badge/AppVersion-v732-informational?style=flat-square)
 
 OSEmu - Standalone Emu reader for OSCam server
 
@@ -85,11 +85,11 @@ N/A
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | service | object | See below | nothing listens on http port, just defined due to common subchart |
-| softCamKey | string | `"#*#*#*#*#*#*#*#*#*#*# KEYS #*#*#*#*#*#*#*#*#*#*#\n"` |  |
+| softCamKey | string | See values.yaml | SoftCam.Key file |
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 

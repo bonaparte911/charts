@@ -54,5 +54,7 @@ persistence:
         readOnly: true
         enabled: true
 
+# -- SoftCam.Key file
+# @default -- See values.yaml
 softCamKey: |
   #*#*#*#*#*#*#*#*#*#*# KEYS #*#*#*#*#*#*#*#*#*#*#
