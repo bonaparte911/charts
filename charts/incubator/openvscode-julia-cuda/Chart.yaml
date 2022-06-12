@@ -1,0 +1,27 @@
+apiVersion: v2
+appVersion: "11.6.2-cudnn8-devel-ubuntu20.04-1.7.3-1.68.0"
+description: Visual Studio Code Server with an installation of julia lang with cuda support
+name: openvscode-julia-cuda
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - visual studio code
+  - vscode
+  - cuda
+  - julia
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/openvscode-julia-cuda
+icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png
+sources:
+  - https://github.com/gitpod-io/openvscode-server
+  - https://github.com/JuliaLang/julia
+  - https://gitlab.com/nvidia/container-images/cuda
+maintainers:
+- name: bonaparte911
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
