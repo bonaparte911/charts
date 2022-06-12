@@ -29,6 +29,39 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/minisatip-1.0.1/minisatip-1.0.1.tgz
     version: 1.0.1
+  openvscode-julia-cuda:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11.6.2-cudnn8-devel-ubuntu20.04-1.7.3-1.68.0
+    created: "2022-06-12T18:10:33.108371019Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Visual Studio Code Server with an installation of julia lang with
+      cuda support
+    digest: aa89f20f7a1fde68169b0e26263d9128ed929f2c6a6b6bc53c6f104863ccb408
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/openvscode-julia-cuda
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png
+    keywords:
+    - visual studio code
+    - vscode
+    - cuda
+    - julia
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: openvscode-julia-cuda
+    sources:
+    - https://github.com/gitpod-io/openvscode-server
+    - https://github.com/JuliaLang/julia
+    - https://gitlab.com/nvidia/container-images/cuda
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/openvscode-julia-cuda-1.0.0/openvscode-julia-cuda-1.0.0.tgz
+    version: 1.0.0
   oscam:
   - annotations:
       artifacthub.io/changes: |
@@ -340,4 +373,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
     version: 1.0.0
-generated: "2022-04-04T20:46:08.319008023Z"
+generated: "2022-06-12T18:10:33.108778834Z"
