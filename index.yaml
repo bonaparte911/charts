@@ -7,6 +7,34 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: version-30c4f08a
+    created: "2022-06-12T18:46:31.736031565Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: minisatip - A multi-threaded satip server version 1.2
+    digest: 46d47a1dd020b00f36311874e2041d6501c80fafd3956c165e1cf2e6abc98138
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/minisatip
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png
+    keywords:
+    - satip
+    - tv
+    - dvb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: minisatip
+    sources:
+    - https://github.com/catalinii/minisatip
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/minisatip-1.0.2/minisatip-1.0.2.tgz
+    version: 1.0.2
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: version-30c4f08a
     created: "2022-03-15T21:21:33.54585921Z"
     dependencies:
     - name: common
@@ -30,6 +58,40 @@ entries:
     - https://github.com/bonaparte911/charts/releases/download/minisatip-1.0.1/minisatip-1.0.1.tgz
     version: 1.0.1
   openvscode-julia-cuda:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+        - kind: fixed
+          description: deactivated pvc in default settings
+    apiVersion: v2
+    appVersion: 11.6.2-cudnn8-devel-ubuntu20.04-1.7.3-1.68.0
+    created: "2022-06-12T18:46:31.861680149Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Visual Studio Code Server with an installation of julia lang with
+      cuda support
+    digest: b72180e79d2d036d056e0642bb36a1a2c34e0f6d12876bfa2515141488722c60
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/openvscode-julia-cuda
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/openvscode-server-logo.png
+    keywords:
+    - visual studio code
+    - vscode
+    - cuda
+    - julia
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: openvscode-julia-cuda
+    sources:
+    - https://github.com/gitpod-io/openvscode-server
+    - https://github.com/JuliaLang/julia
+    - https://gitlab.com/nvidia/container-images/cuda
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/openvscode-julia-cuda-1.0.1/openvscode-julia-cuda-1.0.1.tgz
+    version: 1.0.1
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -63,6 +125,35 @@ entries:
     - https://github.com/bonaparte911/charts/releases/download/openvscode-julia-cuda-1.0.0/openvscode-julia-cuda-1.0.0.tgz
     version: 1.0.0
   oscam:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11704-ls37
+    created: "2022-06-12T18:46:31.981431407Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: oscam - Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards.
+    digest: 421b9924f0a3f959a1944b21dca4a12321b157875c2a612b5bf86d833b54f969
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/oscam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+    keywords:
+    - tv
+    - dvb
+    - cam
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: oscam
+    sources:
+    - http://www.streamboard.tv/oscam/
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.7/oscam-1.0.7.tgz
+    version: 1.0.7
   - annotations:
       artifacthub.io/changes: |
         - kind: added
@@ -244,6 +335,33 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: v732
+    created: "2022-06-12T18:46:32.096863673Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: OSEmu - Standalone Emu reader for OSCam server
+    digest: 8df1f8dbfcddb1c4068289c7941e7ee429215f506bc39462aef160db121f1432
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/osemu
+    keywords:
+    - tv
+    - dvb
+    - emu
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: osemu
+    sources:
+    - https://github.com/oscam-emu/OSEmu
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.5/osemu-1.0.5.tgz
+    version: 1.0.5
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: v732
     created: "2022-04-04T20:46:08.318795813Z"
     dependencies:
     - name: common
@@ -373,4 +491,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-12T18:10:33.108778834Z"
+generated: "2022-06-12T18:46:32.096947274Z"
