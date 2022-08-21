@@ -26,9 +26,13 @@ service:
     ports:
       http:
         port: 8875
-      rtsp:
-        port: 554
+      rtsp-tcp:
         enabled: true
+        port: 554
+        protocol: TCP
+      rtsp-udp:
+        enabled: true
+        port: 554
         protocol: UDP
       app:
         port: 1900
