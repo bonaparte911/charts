@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: "4.2.4-ls157"
+description: "Webgrabplus - a multi-site incremental xmltv epg grabber."
+name: webgrabplus
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - tv
+  - xmltv
+  - epg
+home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/webgrabplus
+sources:
+- http://www.webgrabplus.com
+maintainers:
+- name: bonaparte911
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.3.0
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version

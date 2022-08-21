@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webgrabplus-config
+  labels:
+    {{- include "common.labels" . | nindent 4 }}
+data:
+{{- /* Fetch configs */ -}}
+{{- range $subpath := .Values.persistence.config.subPath }}
+  {{ if $subpath.enabled }}
+    {{ $subpath.path }}: |
+      {{ tpl $subpath.config $ | nindent 12  }}
+  {{- end}}
+{{- end }}
