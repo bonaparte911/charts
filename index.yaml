@@ -7,6 +7,34 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: version-30c4f08a
+    created: "2022-08-21T20:29:36.285705226Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: minisatip - A multi-threaded satip server version 1.2
+    digest: f7a0477e5f7bb126ea74802f90163d135998c63995e5ae1d62f92d760b8bdb47
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/minisatip
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/minisatip-icon.png
+    keywords:
+    - satip
+    - tv
+    - dvb
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: minisatip
+    sources:
+    - https://github.com/catalinii/minisatip
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/minisatip-1.0.3/minisatip-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: version-30c4f08a
     created: "2022-06-12T18:46:31.736031565Z"
     dependencies:
     - name: common
@@ -491,4 +519,32 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/osemu-1.0.0/osemu-1.0.0.tgz
     version: 1.0.0
-generated: "2022-06-12T18:46:32.096947274Z"
+  webgrabplus:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 4.2.4-ls157
+    created: "2022-08-21T20:29:36.45235647Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Webgrabplus - a multi-site incremental xmltv epg grabber.
+    digest: 6e3878c72b569346e350dcc2bc18aae685bfb1231b53990420b22e43f6a52e76
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/webgrabplus
+    keywords:
+    - tv
+    - xmltv
+    - epg
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: webgrabplus
+    sources:
+    - http://www.webgrabplus.com
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/webgrabplus-1.0.0/webgrabplus-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-08-21T20:29:36.452404971Z"
