@@ -1,6 +1,6 @@
 # minisatip
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: version-30c4f08a](https://img.shields.io/badge/AppVersion-version--30c4f08a-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: version-30c4f08a](https://img.shields.io/badge/AppVersion-version--30c4f08a-informational?style=flat-square)
 
 minisatip - A multi-threaded satip server version 1.2
 
@@ -83,13 +83,13 @@ N/A
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.dvb | object | See values.yaml | Configure a hostPathMount to mount dvb device in the container. |
-| securityContext | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| securityContext | object | See values.yaml | Configuration of security context. |
 | securityContext.privileged | bool | `false` | (bool) Privileged securityContext may be required if dvb devics are accessed directly through the host machine |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.3
 
 #### Added
 
