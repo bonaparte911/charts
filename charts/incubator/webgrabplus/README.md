@@ -1,6 +1,6 @@
 # webgrabplus
 
-![Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
+![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
 
 Webgrabplus - a multi-site incremental xmltv epg grabber.
 
@@ -83,11 +83,11 @@ N/A
 | image.tag | string | `"4.2.4-ls157"` | image tag |
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
-| service | string | See values.yaml | Configures service settings for the chart. |
+| service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.1
 
 #### Added
 

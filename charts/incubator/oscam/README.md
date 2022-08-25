@@ -1,6 +1,6 @@
 # oscam
 
-![Version: 1.0.6](https://img.shields.io/badge/Version-1.0.6-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
+![Version: 1.0.8](https://img.shields.io/badge/Version-1.0.8-informational?style=flat-square) ![AppVersion: 11704-ls37](https://img.shields.io/badge/AppVersion-11704--ls37-informational?style=flat-square)
 
 oscam - Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards.
 
@@ -84,13 +84,13 @@ N/A
 | ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
 | persistence.reader | object | See values.yaml | Configure hostPathMount(s) to mount (multiple) smart card reader devices in the container. -- See more variants [@linuxserver.io](https://github.com/linuxserver/docker-oscam#passing-through-smart-card-readers). |
-| securityContext | object | See values.yaml | Configure persistence settings for the chart under this key. |
+| securityContext | object | See values.yaml | Configuration of security context. |
 | securityContext.privileged | bool | `false` | (bool) Privileged securityContext may be required if smart card devices are accessed directly through the host machine |
 | service | object | See values.yaml | Configures service settings for the chart. |
 
 ## Changelog
 
-### Version 1.0.6
+### Version 1.0.8
 
 #### Added
 

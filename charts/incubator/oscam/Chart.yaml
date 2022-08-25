@@ -2,7 +2,7 @@ apiVersion: v2
 appVersion: "11704-ls37"
 description: "oscam - Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards."
 name: oscam
-version: 1.0.7
+version: 1.0.8
 kubeVersion: ">=1.16.0-0"
 keywords:
   - tv
