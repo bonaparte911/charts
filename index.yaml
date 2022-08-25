@@ -159,6 +159,35 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 11704-ls37
+    created: "2022-08-25T20:41:25.915766724Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: oscam - Open Source Conditional Access Module software used for descrambling
+      DVB transmissions using smart cards.
+    digest: c7d1559f7663c30083a9ac843e1676d8d85091250aecf1a2dc148860bdd61ff5
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/oscam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/oscam-logo.png
+    keywords:
+    - tv
+    - dvb
+    - cam
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: oscam
+    sources:
+    - http://www.streamboard.tv/oscam/
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/oscam-1.0.8/oscam-1.0.8.tgz
+    version: 1.0.8
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 11704-ls37
     created: "2022-06-12T18:46:31.981431407Z"
     dependencies:
     - name: common
@@ -526,6 +555,33 @@ entries:
           description: Initial version
     apiVersion: v2
     appVersion: 4.2.4-ls157
+    created: "2022-08-25T20:41:26.085325947Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.3.0
+    description: Webgrabplus - a multi-site incremental xmltv epg grabber.
+    digest: 427380fda25bb1915d4e7283d1f2eb2fe9cbd2fc84897cbb86d232b363d18d08
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/incubator/webgrabplus
+    keywords:
+    - tv
+    - xmltv
+    - epg
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: bonaparte911
+    name: webgrabplus
+    sources:
+    - http://www.webgrabplus.com
+    urls:
+    - https://github.com/bonaparte911/charts/releases/download/webgrabplus-1.0.1/webgrabplus-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial version
+    apiVersion: v2
+    appVersion: 4.2.4-ls157
     created: "2022-08-21T20:29:36.45235647Z"
     dependencies:
     - name: common
@@ -547,4 +603,4 @@ entries:
     urls:
     - https://github.com/bonaparte911/charts/releases/download/webgrabplus-1.0.0/webgrabplus-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-21T20:29:36.452404971Z"
+generated: "2022-08-25T20:41:26.085964566Z"
