@@ -1,6 +1,6 @@
 # webgrabplus
 
-![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
+![Version: 1.0.3](https://img.shields.io/badge/Version-1.0.3-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
 
 Webgrabplus - a multi-site incremental xmltv epg grabber.
 
@@ -81,13 +81,14 @@ N/A
 | image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | image.repository | string | `"ghcr.io/linuxserver/webgrabplus"` | image repository |
 | image.tag | string | `"4.2.4-ls157"` | image tag |
-| ingress.main | object | See values.yaml | Enable and configure ingress settings for the chart under this key. |
+| ingress.main.enabled | bool | `false` | Ingress is disabled for this chart. Do not modify unless you know what you are doing. |
 | persistence | object | See values.yaml | Configure persistence settings for the chart under this key. |
-| service | object | See values.yaml | Configures service settings for the chart. |
+| probes | object | See values.yaml | Disable probes for this chart since there is no service. Do not modify unless you know what you are doing. |
+| service.main.enabled | bool | `false` | Main service is disabled for this chart. Do not modify unless you know what you are doing. |
 
 ## Changelog
 
-### Version 1.0.2
+### Version 1.0.3
 
 #### Added
 
