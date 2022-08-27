@@ -45,7 +45,7 @@ persistence:
       configMap:
         name: webgrabplus-config
     subPath:
-      - path: WebGrab++.config.xml
+      - path: wg-config
         mountPath: /config/WebGrab++.config.xml
         readOnly: true
         enabled: true

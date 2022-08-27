@@ -1,6 +1,6 @@
 # webgrabplus
 
-![Version: 1.0.1](https://img.shields.io/badge/Version-1.0.1-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
+![Version: 1.0.2](https://img.shields.io/badge/Version-1.0.2-informational?style=flat-square) ![AppVersion: 4.2.4-ls157](https://img.shields.io/badge/AppVersion-4.2.4--ls157-informational?style=flat-square)
 
 Webgrabplus - a multi-site incremental xmltv epg grabber.
 
@@ -87,7 +87,7 @@ N/A
 
 ## Changelog
 
-### Version 1.0.1
+### Version 1.0.2
 
 #### Added
 
